@@ -1,17 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Theme variables ---------- */
+/* Light (default) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* extras you might want */
+  --muted: #6b7280;
+  --card-bg: #ffffff;
 }
 
+/* Dark — next-themes will add the `dark` class on <html>,
+   so scope variable overrides to the .dark selector. */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+
+  --muted: #9ca3af;
+  --card-bg: #0b0b0b;
+}
+
+/* Keep the prefers-color-scheme rule as a fallback for users
+   who have system dark but JS/theme provider hasn't run yet */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --muted: #9ca3af;
+    --card-bg: #0b0b0b;
   }
 }
 
-html,
-body {
+/* ---------- Global layout ---------- */
+html, body {
+  width: 100%;
+  height: 100%;
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -22,19 +48,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition: background-color 160ms ease, color 160ms ease;
 }
 
+/* box sizing & reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* links */
 a {
   color: inherit;
   text-decoration: none;
 }
 
+/* Optional: let browsers know the page supports both color schemes */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
