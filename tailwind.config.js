@@ -13,6 +13,9 @@ module.exports = {
       backgroundImage: {
         "green-main": "linear-gradient(to right, #08E7B7, #11CDAD)",
       },
+      fontFamily: {
+      sans: ["var(--font-roboto)"],
+    },
     },
   },
   plugins: [],
