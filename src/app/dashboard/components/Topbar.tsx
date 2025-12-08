@@ -6,8 +6,6 @@ import {
   Moon,
   Sun,
   Bell,
-  User,
-  Settings,
   LogOut,
 } from "lucide-react";
 import { MenuItem } from "./MenuItem";
@@ -72,14 +70,12 @@ export function Topbar({
 
           {open && (
             <div className="absolute right-0 mt-2 w-48 bg-white dark:bg-gray-900 border dark:border-gray-800 rounded-xl shadow-lg overflow-hidden z-50">
-              <MenuItem icon={<User size={16} />} label="Profile" href="/profile"/>
-              <MenuItem icon={<Settings size={16} />} label="Settings" />
-              <div className="h-px bg-gray-100 dark:bg-gray-800 my-1" />
-              <MenuItem
+             <MenuItem
                 icon={<LogOut size={16} />}
                 label="Logout"
                 danger
               />
+              
             </div>
           )}
         </div>

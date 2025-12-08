@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart2, Home, Settings, Users } from "lucide-react";
+import {  User, Home, Settings, Users } from "lucide-react";
 
 const menuItems = [
   {
@@ -11,9 +11,9 @@ const menuItems = [
     icon: Home,
   },
   {
-    label: "Analytics",
-    href: "/analytics",
-    icon: BarChart2,
+    label: "Profile",
+    href: "/profile",
+    icon:  User,
   },
   {
     label: "Users",
