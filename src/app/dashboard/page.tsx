@@ -19,10 +19,17 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-950 text-gray-800 dark:text-gray-100">
       <div className="flex">
         <Sidebar />
-
         <main className="flex-1 p-6">
-          <Topbar onToggleTheme={toggleTheme} isDark={isDark} />
-
+          <Topbar onToggleTheme={toggleTheme} isDark={isDark}>
+            <div className="flex flex-col gap-1">
+              <h1 className="text-xl font-semibold text-gray-900 dark:text-gray-100">
+                Dashboard Overview
+              </h1>
+              <span className="text-sm text-gray-500 dark:text-gray-400">
+                Welcome back! Here's what's happening
+              </span>
+            </div>
+          </Topbar>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
             <StatsCard title="Total Revenue" value="$124,563" change="+12.5%" />
             <StatsCard title="Active Users" value="8,234" change="+8.2%" />
