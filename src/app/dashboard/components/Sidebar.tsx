@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {  User, Home, Settings, Users } from "lucide-react";
+import {  User, Home, Settings, Users, Kanban } from "lucide-react";
 
 const menuItems = [
   {
@@ -16,10 +16,10 @@ const menuItems = [
     icon:  User,
   },
   {
-    label: "Users",
-    href: "/users",
-    icon: Users,
-  },
+  label: "Scrum Board",
+  href: "/scrum",
+  icon: Kanban,
+},
   {
     label: "Settings",
     href: "/settings",
