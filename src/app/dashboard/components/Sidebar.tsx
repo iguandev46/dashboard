@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { User, Home, Settings, Kanban, Menu } from "lucide-react";
+import { User, Home, Settings, Kanban, Menu, ShoppingCart } from "lucide-react";
 
 const menuItems = [
   { label: "Dashboard", href: "/", icon: Home },
   { label: "Profile", href: "/profile", icon: User },
   { label: "Scrum Board", href: "/scrum", icon: Kanban },
   { label: "Settings", href: "/settings", icon: Settings },
+  { label: "Orders", href: "/orders", icon: ShoppingCart },
 ];
 
 export function Sidebar() {

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        green: "#08e7b7",
+        greenMain: "#08e7b7",
       },
       backgroundImage: {
         "green-main": "linear-gradient(to right, #08E7B7, #11CDAD)",

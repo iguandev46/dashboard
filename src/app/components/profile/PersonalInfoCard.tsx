@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { SegmentedTabs } from "../ui/SegmentedTabs";
 
 export function PersonalInfoCard() {
   const [tab, setTab] = useState<"details" | "security">("details");
@@ -11,24 +12,15 @@ export function PersonalInfoCard() {
         Personal Information
       </h3>
 
-      <div className="inline-flex dark:bg-gray-800 bg-gray-100 gap-1 rounded-lg mb-6 p-1">
-        {["details", "security"].map((t) => (
-          <button
-            key={t}
-            onClick={() => setTab(t as any)}
-            className={`
-        px-4 py-1.5 rounded-lg text-sm transition whitespace-nowrap
-        ${
-          tab === t
-            ? "bg-white text-gray-900 shadow dark:bg-gray-900 dark:text-white"
-            : "bg-transparent text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
-        }
-      `}
-          >
-            {t === "details" ? "Details" : "Security"}
-          </button>
-        ))}
-      </div>
+        <SegmentedTabs
+      value={tab}
+      onChange={setTab}
+      tabs={[
+        { key: "details", label: "Details" },
+        { key: "security", label: "Security" },
+      ]}
+      className="mb-6"
+    />
 
       {tab === "details" && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -41,7 +33,7 @@ export function PersonalInfoCard() {
             value="Product manager with 5+ years of experience..."
           />
 
-          <button className="mt-4 w-fit px-4 py-2 bg-green text-white rounded-lg">
+          <button className="mt-4 w-fit px-4 py-2 bg-greenMain text-white rounded-lg">
             Save Changes
           </button>
         </div>

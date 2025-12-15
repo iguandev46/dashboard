@@ -143,7 +143,7 @@ function Switch() {
     <button
       onClick={() => setOn(!on)}
       className={`w-10 h-5 flex items-center rounded-full p-1 transition-all 
-        ${on ? "bg-green" : "bg-gray-300 dark:bg-gray-700"}
+        ${on ? "bg-greenMain" : "bg-gray-300 dark:bg-gray-700"}
       `}
     >
       <div
@@ -208,7 +208,7 @@ function NotificationRow({ title, subtitle, defaultOn }: any) {
       <button
         onClick={() => setOn(!on)}
         className={`w-10 h-5 flex items-center rounded-full p-1 transition-all 
-          ${on ? "bg-green" : "bg-gray-300 dark:bg-gray-700"}
+          ${on ? "bg-greenMain" : "bg-gray-300 dark:bg-gray-700"}
         `}
       >
         <div
@@ -242,7 +242,7 @@ function BillingSettings() {
             </div>
           </div>
 
-          <button className="px-3 py-1.5 bg-green dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-md border border-gray-300 dark:border-gray-600 text-xs">
+          <button className="px-3 py-1.5 bg-greenMain dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-md border border-gray-300 dark:border-gray-600 text-xs">
             Upgrade
           </button>
         </div>
@@ -262,7 +262,7 @@ function BillingSettings() {
       </div>
 
       {/* Bottom bar */}
-      <div className="w-full px-4 py-3 text-center bg-green dark:bg-gray-800 rounded-lg text-gray-700 dark:text-gray-300 text-xs cursor-pointer">
+      <div className="w-full px-4 py-3 text-center bg-greenMain dark:bg-gray-800 rounded-lg text-gray-700 dark:text-gray-300 text-xs cursor-pointer">
         Manage Billing
       </div>
     </div>
@@ -325,7 +325,7 @@ function PrivacyToggleRow({ title, subtitle, defaultOn } : {title : string , sub
       <button
         onClick={() => setOn(!on)}
         className={`w-10 h-5 flex items-center rounded-full p-1 transition-all 
-          ${on ? "bg-green" : "bg-gray-300 dark:bg-gray-700"}
+          ${on ? "bg-greenMain" : "bg-gray-300 dark:bg-gray-700"}
         `}
       >
         <div

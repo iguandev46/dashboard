@@ -16,7 +16,7 @@ export function ProfileCard() {
       </h3>
       <p className="text-sm text-gray-500">Product Manager</p>
 
-      <span className="inline-block mt-2 px-3 py-1 text-xs rounded-full bg-green text-white dark:text-gray-900">
+      <span className="inline-block mt-2 px-3 py-1 text-xs rounded-full bg-greenMain text-white dark:text-gray-900">
         Premium Member
       </span>
 

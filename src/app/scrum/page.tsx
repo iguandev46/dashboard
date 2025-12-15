@@ -80,7 +80,7 @@ export default function ScrumBoard() {
           </p>
         </div>
 
-        <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-green text-white text-sm">
+        <button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-greenMain text-white text-sm">
           <Plus size={16} /> New Task
         </button>
       </div>
