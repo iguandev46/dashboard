@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { User, Home, Settings, Kanban, Menu, ShoppingCart } from "lucide-react";
+import { User, Home, Settings, Kanban, Menu, ShoppingCart, Clock } from "lucide-react";
 
 const menuItems = [
   { label: "Dashboard", href: "/", icon: Home },
@@ -11,6 +11,7 @@ const menuItems = [
   { label: "Scrum Board", href: "/scrum", icon: Kanban },
   { label: "Settings", href: "/settings", icon: Settings },
   { label: "Orders", href: "/orders", icon: ShoppingCart },
+  { label: "Coming Soon", href: "/coming-soon", icon: Clock },
 ];
 
 export function Sidebar() {
