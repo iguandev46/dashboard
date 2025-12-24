@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { User, Home, Settings, Kanban, Menu, ShoppingCart, Clock } from "lucide-react";
+import { User, Home, Settings, Kanban, Menu, ShoppingCart, Clock, Mail } from "lucide-react";
 
 const menuItems = [
   { label: "Dashboard", href: "/", icon: Home },
@@ -12,6 +12,7 @@ const menuItems = [
   { label: "Settings", href: "/settings", icon: Settings },
   { label: "Orders", href: "/orders", icon: ShoppingCart },
   { label: "Coming Soon", href: "/coming-soon", icon: Clock },
+  { label: "Email", href: "/email", icon: Mail },
 ];
 
 export function Sidebar() {
