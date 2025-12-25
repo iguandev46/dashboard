@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { User, Home, Settings, Kanban, Menu, ShoppingCart, Clock, Mail, FileX } from "lucide-react";
+import { User, Home, Settings, Kanban, Menu, ShoppingCart, Clock, Mail, FileX, Folder } from "lucide-react";
 
 const menuItems = [
   { label: "Dashboard", href: "/", icon: Home },
@@ -13,7 +13,8 @@ const menuItems = [
   { label: "Orders", href: "/orders", icon: ShoppingCart },
   { label: "Coming Soon", href: "/coming-soon", icon: Clock },
   { label: "Email", href: "/email", icon: Mail },
-  { label: "404 Error page", href: "/not-found ", icon: FileX },
+  { label: "404 Error page", href: "/not-found", icon: FileX },
+  { label: "Files", href: "/files", icon: Folder },
 ];
 
 export function Sidebar() {
