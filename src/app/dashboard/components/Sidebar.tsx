@@ -13,7 +13,7 @@ const menuItems = [
   { label: "Orders", href: "/orders", icon: ShoppingCart },
   { label: "Coming Soon", href: "/coming-soon", icon: Clock },
   { label: "Email", href: "/email", icon: Mail },
-  { label: "404 Error page", href: "/not-found", icon: FileX },
+  { label: "404 Error page", href: "/error-404", icon: FileX },
   { label: "Files", href: "/files", icon: Folder },
 ];
 
