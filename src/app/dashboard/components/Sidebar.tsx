@@ -3,19 +3,20 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { User, Home, Settings, Kanban, Menu, ShoppingCart, Clock, Mail, FileX, Folder, CreditCard } from "lucide-react";
+import { User, Home, Settings, Kanban, Menu, ShoppingCart, Clock, Mail, FileX, Folder, CreditCard, Database } from "lucide-react";
 
-const menuItems = [
+export const menuItems = [
   { label: "Dashboard", href: "/", icon: Home },
   { label: "Profile", href: "/profile", icon: User },
   { label: "Scrum Board", href: "/scrum", icon: Kanban },
-  { label: "Settings", href: "/settings", icon: Settings },
+  { label: "Data Management", href: "/data-management", icon: Database },
   { label: "Orders", href: "/orders", icon: ShoppingCart },
   { label: "Pricing", href: "/pricing", icon: CreditCard },
-  { label: "Coming Soon", href: "/coming-soon", icon: Clock },
   { label: "Email", href: "/email", icon: Mail },
-  { label: "404 Error page", href: "/error-404", icon: FileX },
   { label: "Files", href: "/files", icon: Folder },
+  { label: "Settings", href: "/settings", icon: Settings },
+  { label: "Coming Soon", href: "/coming-soon", icon: Clock },
+  { label: "404 Error page", href: "/error-404", icon: FileX },
 ];
 export function Sidebar() {
   const pathname = usePathname();
